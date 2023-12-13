@@ -12,7 +12,7 @@ Soyez attentifs à l'ordre d'import :
 */
 
 /* Polices de caractère */
-
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Rubik+Bubbles&display=swap');
 
 /* Librairies */
 @import "vendors/normalize.css";
