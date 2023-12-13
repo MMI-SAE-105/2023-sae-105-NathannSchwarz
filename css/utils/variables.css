@@ -1,20 +1,20 @@
 :root {
   /* Color styles */
-  --blanc: (#FFF);
-  --noir: (#000);
-  --bleu: (#06F)
+  --blanc: #FFF;
+  --noir: #000;
+  --bleu: #06F;
 
   /* Text-size styles */
   /* base size: text--l-regular (16px) */
-  --text1: (48px);
-  --text2: (36px);
-  --text3: (26px);
-  --text4: (18px);
-  --text5: (14px);
+  --text1: 48px;
+  --text2: 36px;
+  --text3: 26px;
+  --text4: 18px;
+  --text5: 14px;
  
   /* Font-family styles */
-  --font: "Alike", serif;
-  --font1: "Rubik Bubbles", sans-serif;
+  --font: "Alike", sans-serif;
+
 
   /* Espaces */
   --space1x: 10px;

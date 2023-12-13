@@ -12,18 +12,22 @@ Soyez attentifs à l'ordre d'import :
 */
 
 /* Polices de caractère */
-@import url('https://fonts.googleapis.com/css2?family=Alike&family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
 
 /* Librairies */
 @import "vendors/normalize.css";
 
 /* Variables */
-
+@import "utils/variables.css";
 
 /* Règles générales */
-
+@import "base/main.css";
+@import "base/media.css";
 
 /* Règles layout */
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "layout/section.css";
 
 
 /* Règles composants */
