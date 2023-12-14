@@ -18,4 +18,6 @@ button {
     color: var(--Blanc);
     margin-bottom: var(--space5x);   
     margin-bottom: 50px;
+    cursor: pointer;
 }
+

@@ -9,62 +9,70 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<header > 
-    <!-- menu -->
+<header class="header"> 
     
-        <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn">
-            <img x-show="!menuIsOpen" src="/public/Icones/logomenu.svg" alt="logomenu">
-            <img x-show="menuIsOpen" src="/public/Icones/croix.svg" alt="croix">
-        </button>
+            <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" >
+                <img class="header_logo1"  x-show="!menuIsOpen" src="/public/Icones/logomenu.svg" alt="logomenu">
+                <img class="header_logo2"  x-show="menuIsOpen" src="/public/Icones/croix.svg" alt="croix">
+            </button>
+
             <nav id="mainNav" x-show="menuIsOpen" class="menu">
-                <a href="index.html">
-                    <img src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
-                </a>
-      
-                <ul>
-                    <a href="index.html"><li>Page d'accueil</li></a>
-                    <a href="#"><li>Billeterie</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a class="header_logo3" href="index.html">
+                        <img src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
+                    </a>
+
+                <ul class="styleul1">
+                    <a class="styleli1" href="index.html"><li>Page d'accueil</li></a>
+                    <a class="styleli1" href="#"><li>Billeterie</li></a>
+                    <a class="styleli1" href="#"><li>Contact</li></a>
                 </ul>
-                <ul>
-                    <a href="oeuvre1.html"><li>Centre Georges Pompidou </li></a>
-                    <a href="oeuvre3.html"><li>Fondation Beyeler</li></a>
-                    <a href="oeuvre4.html"><li>Auditorium Parco della Musica</li></a>
-                    <a href="oeuvre6.html"><li>Centre Paul Klee</li></a>
-                    <a href="oeuvre5.html"><li>The New York Times Building</li></a>
-                    <a href="oeuvre2.html"><li>The Shard</li></a>
-                    <a href="oeuvre7.html"><li>The Whitney Museum of American Art</li></a>
-                    <a href="oeuvre8.html"><li>Stavros Niarchos Foundation Cultural Center</li></a>
+
+                <ul class="styleul2">
+                    <a class="styleli2 styleli3" href="oeuvre1.html"><li>Centre Georges Pompidou </li></a>
+                    <a class="styleli2" href="oeuvre3.html"><li>Fondation Beyeler</li></a>
+                    <a class="styleli2" href="oeuvre4.html"><li>Auditorium Parco della Musica</li></a>
+                    <a class="styleli2" href="oeuvre6.html"><li>Centre Paul Klee</li></a>
+                    <a class="styleli2" href="oeuvre5.html"><li>The New York Times Building</li></a>
+                    <a class="styleli2" href="oeuvre2.html"><li>The Shard</li></a>
+                    <a class="styleli2" href="oeuvre7.html"><li>The Whitney Museum of American Art</li></a>
+                    <a class="styleli2" href="oeuvre8.html"><li>Stavros Niarchos Foundation Cultural Center</li></a>
                 </ul>
             </nav>
-    <!-- header -->
-    <a href="index.html">
+    
+    <a class="header_logo4" href="index.html">
         <img x-show="!menuIsOpen" src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
     </a>
 </header>
+
+
 <body>
-
-    <h1>“Poésie de l'Architecture Contemporaine“</h1>
-    <img src="/public/img/ranzopiano1.webp" alt="RanzoPiano">
+    <div class="text_intro">
+        <h1 class="texte_titre">“Poésie de l'Architecture Contemporaine“</h1>
+        <img class="img_titre" src="/public/img/ranzopiano1.webp" alt="RanzoPiano">
+    </div>
     
     
+    
 
-    <section class="section_centrage">
-        <h3>Ouvert du 13 avril au juin 2024 </h3>
-
-
+    <section class="information">
         <div>
-            <a href="#">
-                <img src="/public/Icones/arrow-right.svg" alt="flèche">
-                <p>Préparer sa visite</p>
-            </a>
+            <h3 class="info_titre info_left">Ouvert du 13 avril au 23 juin 2024 </h3>
+
+
+            <div class="info_alignement">
+                <a href="#">
+                    <img src="/public/Icones/arrow-right.svg" alt="flèche">
+                    <p class="info_deplacement">Préparer sa visite</p>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/public/Icones/arrow-right.svg" alt="flèche">
+                    <p>Tarifs</p>
+                </a>
+            </div>
         </div>
-        <div>
-            <a href="#">
-                <img src="/public/Icones/arrow-right.svg" alt="flèche">
-                <p>Tarifs</p>
-            </a>
-        </div>
+       
 
         <button class="button_style ">Billeterie</button>
     </section>
@@ -229,9 +237,9 @@
         
 
         <div class="footer_reseaux">
-            <img src="public/Icones/twitter.svg" alt="twitter">
-            <img src="public/Icones/map.svg" alt="map">
-            <img src="public/Icones/insta.svg" alt="insta">
+            <img class="footer_logo2" src="public/Icones/twitter.svg" alt="twitter">
+            <img class="footer_logo2" src="public/Icones/map.svg" alt="map">
+            <img class="footer_logo2" src="public/Icones/insta.svg" alt="insta">
         </div>
             
         

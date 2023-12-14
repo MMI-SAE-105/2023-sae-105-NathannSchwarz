@@ -14,7 +14,7 @@
     margin-top: -70px;
     margin-left: var(--space4x);
     margin-bottom: -90px;
-    
+    padding-bottom:375px; 
     
 }
     
@@ -47,16 +47,13 @@
 }
 
 .footer_reseaux{
-    display: flex;
-    background: var(--Bleu);
-    width: 390px;
-    height: 20px;
-    justify-content: space-between; 
+    background: var(--Bleu);  
 }
 
 .souligne{
     border-bottom: 2px solid var(--Bleu);
     width: 300px;
+    padding-bottom: 30px;
     
 }
 
@@ -67,4 +64,14 @@
 .borderprenom{
     margin-right: -75px;
    
+}
+
+.footer_logo2{
+    display: inline;
+    height: 30px;
+    justify-content: center;
+    color: var(--Blanc);
+    text-align: center;
+    
+
 }
