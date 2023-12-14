@@ -1,0 +1,20 @@
+button {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button_style{
+    width: 304px;
+    height: 51px;
+    padding: var(--space1x) var(--space2x);
+    justify-content: center;
+    align-items: center;
+    background: var(--Bleu);
+    color: var(--Blanc);  
+}

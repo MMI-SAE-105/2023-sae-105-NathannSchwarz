@@ -9,33 +9,34 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<header> 
+<header > 
     <!-- menu -->
-    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn">
-        <img x-show="!menuIsOpen" src="/public/Icones/logomenu.svg" alt="logomenu">
-        <img x-show="menuIsOpen" src="/public/Icones/croix.svg" alt="croix">
-    </button>
-    <nav id="mainNav" x-show="menuIsOpen" class="menu">
-        <a href="index.html">
-            <img src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
-        </a>
-        
-        <ul>
-            <a href="index.html"><li>Page d'accueil</li></a>
-            <a href="#"><li>Billeterie</li></a>
-            <a href="#"><li>Contact</li></a>
-        </ul>
-        <ul>
-            <a href="oeuvre1.html"><li>Centre Georges Pompidou </li></a>
-            <a href="oeuvre3.html"><li>Fondation Beyeler</li></a>
-            <a href="oeuvre4.html"><li>Auditorium Parco della Musica</li></a>
-            <a href="oeuvre6.html"><li>Centre Paul Klee</li></a>
-            <a href="oeuvre5.html"><li>The New York Times Building</li></a>
-            <a href="oeuvre2.html"><li>The Shard</li></a>
-            <a href="oeuvre7.html"><li>The Whitney Museum of American Art</li></a>
-            <a href="oeuvre8.html"><li>Stavros Niarchos Foundation Cultural Center</li></a>
-        </ul>
-    </nav>
+    
+        <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn">
+            <img x-show="!menuIsOpen" src="/public/Icones/logomenu.svg" alt="logomenu">
+            <img x-show="menuIsOpen" src="/public/Icones/croix.svg" alt="croix">
+        </button>
+            <nav id="mainNav" x-show="menuIsOpen" class="menu">
+                <a href="index.html">
+                    <img src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
+                </a>
+      
+                <ul>
+                    <a href="index.html"><li>Page d'accueil</li></a>
+                    <a href="#"><li>Billeterie</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+                <ul>
+                    <a href="oeuvre1.html"><li>Centre Georges Pompidou </li></a>
+                    <a href="oeuvre3.html"><li>Fondation Beyeler</li></a>
+                    <a href="oeuvre4.html"><li>Auditorium Parco della Musica</li></a>
+                    <a href="oeuvre6.html"><li>Centre Paul Klee</li></a>
+                    <a href="oeuvre5.html"><li>The New York Times Building</li></a>
+                    <a href="oeuvre2.html"><li>The Shard</li></a>
+                    <a href="oeuvre7.html"><li>The Whitney Museum of American Art</li></a>
+                    <a href="oeuvre8.html"><li>Stavros Niarchos Foundation Cultural Center</li></a>
+                </ul>
+            </nav>
     <!-- header -->
     <a href="index.html">
         <img x-show="!menuIsOpen" src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
@@ -44,28 +45,31 @@
 <body>
 
     <h1>“Poésie de l'Architecture Contemporaine“</h1>
-
     <img src="/public/img/ranzopiano1.webp" alt="RanzoPiano">
-
-    <div>
-        <h3>Ouvert du 13 avril au juin 2024 </h3>
-    </div>
+    
     
 
-    <div>
-        <a href="#">
-            <img src="/public/Icones/arrow-right.svg" alt="flèche">
-            <p>Préparer sa visite</p>
-        </a>
-    </div>
-    <div>
-        <a href="#">
-            <img src="/public/Icones/arrow-right.svg" alt="flèche">
-            <p>Tarifs</p>
-        </a>
-    </div>
+    <section class="section_button">
+        <h3>Ouvert du 13 avril au juin 2024 </h3>
 
-    <button>Billeterie</button>
+        
+
+        <div>
+            <a href="#">
+                <img src="/public/Icones/arrow-right.svg" alt="flèche">
+                <p>Préparer sa visite</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="/public/Icones/arrow-right.svg" alt="flèche">
+                <p>Tarifs</p>
+            </a>
+        </div>
+
+        <button class="button_style ">Billeterie</button>
+    </section>
+
     <img src="/public/img/fondacartier1.webp" alt="fondacartier1">
 
     <p>Ouverture</p>
@@ -193,14 +197,15 @@
         </div>
     </section>
 </body>
-<footer>
-    <img src="/public/Icones/logoexpo1.svg" alt="logoexpo1">
-    <div>
+<footer class="section_footer">
+    <img class="logo_footer" src="/public/Icones/logoexpo1.svg" alt="logoexpo1">
+    
+    <div class="formulaire">
         <p>Nom</p>
         <p>Prénom</p>
         <p>Mail</p>
         <p>Message</p>
-        <button>Envoyé</button>
+        <button class="button_style">Envoyé</button>
     </div>
 
     <div>

@@ -32,3 +32,5 @@ Soyez attentifs à l'ordre d'import :
 
 /* Règles composants */
 
+@import "components/intro.css";
+@import "components/btn.css";
