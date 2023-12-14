@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     z-index: 1;
+    margin-bottom: -150px;
 }
 
 .texte_titre{
@@ -19,24 +20,5 @@
     top :300px
 }
 
-.information{
-    text-align: center;
-    padding-left: 45px;
-    padding-right: 60px;
-}
 
-.info_left{
-    text-align: left;
-}
 
-.info_alignement{
-    
-}
-
-.info_deplacement{
-    left: 300px
-}
-
-.info_titre{
-    line-height: 60px;
-}

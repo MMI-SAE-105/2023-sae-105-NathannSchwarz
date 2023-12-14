@@ -10,7 +10,7 @@ button {
 }
 
 .button_style{
-    width: 304px;
+    width: 250px;
     height: 51px;
     justify-content: center;
     align-items: center;
@@ -19,5 +19,7 @@ button {
     margin-bottom: var(--space5x);   
     margin-bottom: 50px;
     cursor: pointer;
+    z-index: 1;
+    margin-left: -20px;
 }
 
