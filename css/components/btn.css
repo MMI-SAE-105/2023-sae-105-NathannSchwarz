@@ -12,9 +12,10 @@ button {
 .button_style{
     width: 304px;
     height: 51px;
-    padding: var(--space1x) var(--space2x);
     justify-content: center;
     align-items: center;
     background: var(--Bleu);
-    color: var(--Blanc);  
+    color: var(--Blanc);
+    margin-bottom: var(--space5x);   
+    margin-bottom: 50px;
 }

@@ -1,8 +1,12 @@
-.section_footer {
+.section_formulaire{
     text-align: center;
   }
 
 .section_button{
+    text-align: center;
+}
+
+.section_centrage{
     text-align: center;
 }
 
