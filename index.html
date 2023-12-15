@@ -10,15 +10,16 @@
 </head>
 
 <header class="header"> 
-    
-            <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" >
+        <div class="superpose">
+            <button class="superposeelement" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" >
                 <img class="header_logo1"  x-show="!menuIsOpen" src="/public/Icones/logomenu.svg" alt="logomenu">
                 <img class="header_logo2"  x-show="menuIsOpen" src="/public/Icones/croix.svg" alt="croix">
             </button>
 
-            <nav id="mainNav" x-show="menuIsOpen" class="menu">
+        </div>
+            <nav id="mainNav" x-show="menuIsOpen" class="header_caché">
                     <a class="header_logo3" href="index.html">
-                        <img src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
+                        <img  class="superposeelement"src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
                     </a>
 
                 <ul class="styleul1">
@@ -40,7 +41,7 @@
             </nav>
     
     <a class="header_logo4" href="index.html">
-        <img x-show="!menuIsOpen" src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
+        <img x-show="!menuIsOpen" class="superposeelement " src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
     </a>
 </header>
 
@@ -51,68 +52,83 @@
         <img class="img_titre" src="/public/img/ranzopiano1.webp" alt="RanzoPiano">
     </div>
     
+
     <section>
-        <div>
-            <h3>Ouvert du 13 avril au 23 juin 2024 </h3>
+        <div> 
+            <img class="logoposition" src="/public/Icones/Ellipse 1.svg" alt="ellipse">
+            <h3 class="soustitre">Ouvert du 13 avril au 23 juin 2024 </h3>
 
 
-            <div>
+            <div class="lienprépa1">
                 <a href="#">
-                    <img src="/public/Icones/arrow-right.svg" alt="flèche">
-                    <p>Préparer sa visite</p>
+                    <img class="taillefleche" src="/public/Icones/arrow-right.svg" alt="flèche">
+                    <p class="lienprépa1txt1">Préparer sa visite</p>
                 </a>
             </div>
-            <div>
+            <div class="lienprépa1" >
                 <a href="#">
-                    <img src="/public/Icones/arrow-right.svg" alt="flèche">
-                    <p>Tarifs</p>
+                    <img  class="taillefleche2" src="/public/Icones/arrow-right.svg" alt="flèche">
+                    <p class="lienprépa1txt2">Tarifs</p>
                 </a>
             </div>
         </div>
        
 
-        <button class="button_style ">Billeterie</button>
+        <button class="button_style button_center ">Billeterie</button>
     </section>
 
-    <img src="/public/img/fondacartier1.webp" alt="fondacartier1">
+    <img class="imggoerge" src="/public/img/fondacartier1.webp" alt="fondacartier1">
 
-    <p>Ouverture</p>
-    <div>
-        <a href="#">
-            <img src="/public/Icones/arrow-right.svg" alt="flèche">
-            <p>tous les jours de 11h à 20h</p>
-        </a>
-    </div>
-    <div>
-        <a href="#">
-            <img src="/public/Icones/arrow-right.svg" alt="flèche">
-            <p>Nocturne le mardi à 22h</p>
-        </a>
-    </div>
+    <section class="ouvertureposition">
+        <div>
+            <img class="logoposition" src="/public/Icones/Ellipse 1.svg" alt="ellipse">
+            <h3 class="soustitre">Ouverture</h3>
+        </div>
+        
+        <div class="lienprépa1">
+            <a href="#">
+                <img class="taillefleche" src="/public/Icones/arrow-right.svg" alt="flèche">
+                <p class="lienprépa1txt1">Tous les jours de 11h à 20h</p>
+            </a>
+        </div>
+        <div class="lienprépa1">
+            <a href="#">
+                <img class="taillefleche2" src="/public/Icones/arrow-right.svg" alt="flèche">
+                <p class="lienprépa1txt2">Nocturne le mardi à 22h</p>
+            </a>
+        </div>
+    </section>
 
-    <p>Fermeture</p>
-    <div>
-        <a href="#">
-            <img src="/public/Icones/arrow-right.svg" alt="flèche">
-            <p>Tous les lundis</p>
-        </a>
-    </div>
-    <div>
-        <a href="#">
-            <img src="/public/Icones/arrow-right.svg" alt="flèche">
-            <p>Dès 19h45, 21h45 le mardi</p>
-        </a>
-    </div>
 
-    <img src="/public/img/fondacartier2.webp" alt="fondacartier2">
+    <section>
+        <div >
+            <img class="logoposition" src="/public/Icones/Ellipse 1.svg" alt="ellipse">
+            <h3 class="soustitre">Fermeture</h3>
+        </div>
+        <div class="lienprépa1">
+            <a href="#">
+                <img class="taillefleche"  src="/public/Icones/arrow-right.svg" alt="flèche">
+                <p class="lienprépa1txt1">Tous les lundis</p>
+            </a>
+        </div>
+        <div class="lienprépa1">
+            <a href="#">
+                <img class="taillefleche2" src="/public/Icones/arrow-right.svg" alt="flèche">
+                <p class="lienprépa1txt2">Dès 19h45, 21h45 le mardi</p>
+            </a>
+        </div>
+    </section>
+    
+    
+    
 
-    <h2>L’exposition aura lieu :</h2>
-    <p>Fondation Cartier, 
-        261 Bd Raspail, 
-        75014 Paris</p>
+    <img class="imggoerge2"  src="/public/img/fondacartier2.webp" alt="fondacartier2">
 
-    <h2>Tarifs :</h2>
-    <ul>
+    <h2 class="texte_titre1">L’exposition aura lieu :</h2>
+    <p class="texte_titre3">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+
+    <h2 class="texte_titre2">Tarifs :</h2>
+    <ul class="texte_titre4">
         <li>Plein tarif  : 11€</li>
         <li>Tarif réduit : 7,50€</li>
         <li>Réduction 13 - 25 ans : 5€</li>
@@ -120,86 +136,90 @@
         <li>- 13 ans et autres : Gratuit</li>
     </ul>
 
+    <section class="carroussel">
+        <div>
+            <a href="piano.html">
+                <h2 class="texte_titre5">Ranzo Piano Architecte Visionnaire</h2>
+                <div>
+                    <img class="imgcarrousel"src="/public/Icones/arrow-right.svg" alt="flèche">
+                    <p>Voir plus</p>
+                </div>
+                
+            </a>
+        </div>
     
-    <div>
-        
-        <a href="piano.html">
-            <h2>Ranzo Piano Architecte Visionnaire</h2>
-            <img src="/public/Icones/arrow-right.svg" alt="flèche">
-            <p>Voir plus</p>
-        </a>
-    </div>
-
-    <setion>
-        <img src="/public/Icones/Vector 2.svg" alt="vecteurpage">
         <div>
-            <a href="oeuvre1.html">
-                <h3>Centre Georges Pompidou Paris, France 1977 </h3>
-                <img src="/public/img/goergepompidou1.webp" alt="goergepompidou1">
-                <img src="/public/img/goergepompidou2.webp" alt="goergepompidou2">
-                <img src="/public/img/goergepompidou3.webp" alt="goergepompidou3">
-            </a>
-        </div>
-        <div>
-            <a href="oeuvre3.html">
-                <h3>Fondation Beyeler - Bâle, Suisse 1997 </h3>
-                <img src="/public/img/fondationbayer1.webp" alt="fondationbayer1">
-                <img src="/public/img/fondationbayer2.webp" alt="fondationbayer2">
-                <img src="/public/img/fondationbayer3.webp" alt="fondationbayer3">
-            </a>
-        </div>
-        <div>
-            <a href="oeuvre4.html">
-                <h3>Auditorium Parco della Musica - Rome, Italie 2002 </h3>
-                <img src="/public/img/Auditorium1.webp" alt="Auditorium1">
-                <img src="/public/img/Auditorium2.webp" alt="Auditorium2">
-                <img src="/public/img/Auditorium3.webp" alt="Auditorium3">
-            </a>
-        </div>
-        <div>
-            <a href="oeuvre6.html">
-                <h3></h3>Centre Paul Klee - Berne, Suisse 2005</h3>
-                <img src="/public/img/CentrePaulKlee1.webp" alt="CentrePaulKlee1">
-                <img src="/public/img/CentrePaulKlee2.webp" alt="CentrePaulKlee2">
-                <img src="/public/img/CentrePaulKlee3.webp" alt="CentrePaulKlee3">
-            </a>
-        </div>
-        <div>
-            <a href="oeuvre5.html">
-                <h3>The New York Times Building</h3>
-                <h3> New York, États-Unis 2007</h3>
-                <img src="/public/img/TimesBuilding1.webp" alt="TimesBuilding1">
-                <img src="/public/img/TimesBuilding2.webp" alt="TimesBuilding2">
-                <img src="/public/img/TimesBuilding3.webp" alt="TimesBuilding3">
-            </a>
-        </div>
-        <div>
-            <a href="oeuvre2.html">
-                <h3>The Shard - Londres, Royaume-Uni 2012</h3>
-                <img src="/public/img/TheShard1.webp" alt="TheShard1">
-                <img src="/public/img/TheShard2.webp" alt="TheShard2">
-                <img src="/public/img/TheShard3.webp" alt="TheShard3">
-            </a>
-        </div>
-        <div>
-            <a href="oeuvre7.html">
-                <h3>New York, États-Unis 2015.</h3>
-                <h3>The Whitney Museum of American Art</h3>
-                <img src="/public/img/MuseumofAmerican1.webp" alt="MuseumofAmerican1">
-                <img src="/public/img/MuseumofAmerican2.webp" alt="MuseumofAmerican2">
-                <img src="/public/img/MuseumofAmerican3.webp" alt="MuseumofAmerican3">
-            </a>
-        </div>
-        <div>
-            <a href="oeuvre8.html">
-                <h3>Athènes, Grèce 2016</h3>
-                <h3>Stavros Niarchos Foundation Cultural Center </h3>
-                <img src="/public/img/CulturalCenter1.webp" alt="CulturalCenter1">
-                <img src="/public/img/CulturalCenter2.webp" alt="CulturalCenter2">
-                <img src="/public/img/CulturalCenter3.webp" alt="CulturalCenter3">
-            </a>
+            <img src="/public/Icones/Vector 2.svg" alt="vecteurpage">
+            <div>
+                <a href="oeuvre1.html">
+                    <h3>Centre Georges Pompidou Paris, France 1977 </h3>
+                    <img src="/public/img/goergepompidou1.webp" alt="goergepompidou1">
+                    <img src="/public/img/goergepompidou2.webp" alt="goergepompidou2">
+                    <img src="/public/img/goergepompidou3.webp" alt="goergepompidou3">
+                </a>
+            </div>
+            <div>
+                <a href="oeuvre3.html">
+                    <h3>Fondation Beyeler - Bâle, Suisse 1997 </h3>
+                    <img src="/public/img/fondationbayer1.webp" alt="fondationbayer1">
+                    <img src="/public/img/fondationbayer2.webp" alt="fondationbayer2">
+                    <img src="/public/img/fondationbayer3.webp" alt="fondationbayer3">
+                </a>
+            </div>
+            <div>
+                <a href="oeuvre4.html">
+                    <h3>Auditorium Parco della Musica - Rome, Italie 2002 </h3>
+                    <img src="/public/img/Auditorium1.webp" alt="Auditorium1">
+                    <img src="/public/img/Auditorium2.webp" alt="Auditorium2">
+                    <img src="/public/img/Auditorium3.webp" alt="Auditorium3">
+                </a>
+            </div>
+            <div>
+                <a href="oeuvre6.html">
+                    <h3></h3>Centre Paul Klee - Berne, Suisse 2005</h3>
+                    <img src="/public/img/CentrePaulKlee1.webp" alt="CentrePaulKlee1">
+                    <img src="/public/img/CentrePaulKlee2.webp" alt="CentrePaulKlee2">
+                    <img src="/public/img/CentrePaulKlee3.webp" alt="CentrePaulKlee3">
+                </a>
+            </div>
+            <div>
+                <a href="oeuvre5.html">
+                    <h3>The New York Times Building</h3>
+                    <h3> New York, États-Unis 2007</h3>
+                    <img src="/public/img/TimesBuilding1.webp" alt="TimesBuilding1">
+                    <img src="/public/img/TimesBuilding2.webp" alt="TimesBuilding2">
+                    <img src="/public/img/TimesBuilding3.webp" alt="TimesBuilding3">
+                </a>
+            </div>
+            <div>
+                <a href="oeuvre2.html">
+                    <h3>The Shard - Londres, Royaume-Uni 2012</h3>
+                    <img src="/public/img/TheShard1.webp" alt="TheShard1">
+                    <img src="/public/img/TheShard2.webp" alt="TheShard2">
+                    <img src="/public/img/TheShard3.webp" alt="TheShard3">
+                </a>
+            </div>
+            <div>
+                <a href="oeuvre7.html">
+                    <h3>New York, États-Unis 2015.</h3>
+                    <h3>The Whitney Museum of American Art</h3>
+                    <img src="/public/img/MuseumofAmerican1.webp" alt="MuseumofAmerican1">
+                    <img src="/public/img/MuseumofAmerican2.webp" alt="MuseumofAmerican2">
+                    <img src="/public/img/MuseumofAmerican3.webp" alt="MuseumofAmerican3">
+                </a>
+            </div>
+            <div>
+                <a href="oeuvre8.html">
+                    <h3>Athènes, Grèce 2016</h3>
+                    <h3>Stavros Niarchos Foundation Cultural Center </h3>
+                    <img src="/public/img/CulturalCenter1.webp" alt="CulturalCenter1">
+                    <img src="/public/img/CulturalCenter2.webp" alt="CulturalCenter2">
+                    <img src="/public/img/CulturalCenter3.webp" alt="CulturalCenter3">
+                </a>
+            </div>
         </div>
     </section>
+   
 </body>
 <footer>
     <section  class="section_formulaire">

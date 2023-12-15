@@ -21,4 +21,128 @@
 }
 
 
+.superposeelement{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
+.soustitre{
+    position: relative;
+    margin-left: 70px;
+    margin-right: 60px;
+    z-index: 2;
+}
+
+.lienprépa1{
+    position: relative;
+    margin-left: 70px;
+    margin-right: 40px;
+}
+
+.lienprépa1txt1{
+    margin-top: -23px;
+    padding-left: 50px;
+}
+
+.lienprépa2{
+    position: relative;
+    margin-left: 70px;
+    margin-right: 60px;
+}
+
+.lienprépa1txt2{
+    margin-top: -23px;
+    padding-left: 70px;
+}
+
+.taillefleche{
+    height: 15px;
+}
+
+.taillefleche2{
+    height: 15px;
+    padding-left: 20px;
+}
+
+.button_center{
+    position: relative;
+    justify-content: center;
+    margin-left: 65px;
+}
+  
+
+
+.logoposition{
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 6px;
+    z-index: 2;
+}
+
+.imggoerge{
+    position: absolute;
+    top:900px;
+}
+
+.imggoerge2{
+    position: absolute;
+    top:1410px;
+}
+
+.ouvertureposition{
+    padding-top: 140px;
+}
+.texte_titre1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, 20%);
+    z-index: 2;
+    top :1400px
+}
+
+.texte_titre2{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-90%, 20%);
+    z-index: 2;
+    top :1680px
+}
+
+.texte_titre3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%, 20%);
+    z-index: 2;
+    top :1520px;
+    margin-right: 40px;
+    color: var(--Blanc);
+}
+
+.texte_titre4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, 20%);
+    z-index: 2;
+    top :1750px;
+    color: var(--Blanc);
+}
+
+.texte_titre5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, 20%);
+    z-index: 2;
+    top :2000px;
+    color: var(--Blanc);
+}
+
+.imgcarrousel{
+    background-color: var(--Noir);
+}

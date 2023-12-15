@@ -21,14 +21,17 @@ h1 {
 }
 
 h2 {
+  font-family: var(--font);
   font-size: var(--text2);
 }
 
 h3 {
+  font-family: var(--font);
   font-size: var(--text3);
 }
 
 h6 {
+  font-family: var(--font);
   font-size: var(--text5);
 }
 

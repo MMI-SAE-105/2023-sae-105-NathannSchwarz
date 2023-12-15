@@ -9,37 +9,40 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<header> 
-    <!-- menu -->
-    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn">
-        <img x-show="!menuIsOpen" src="/public/Icones/logomenu.svg" alt="logomenu">
-        <img x-show="menuIsOpen" src="/public/Icones/croix.svg" alt="croix">
-    </button>
-    <nav id="mainNav" x-show="menuIsOpen" class="menu">
-        <a href="index.html">
-            <img src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
-        </a>
-        
-        <ul>
-            <a href="index.html"><li>Page d'accueil</li></a>
-            <a href="#"><li>Billeterie</li></a>
-            <a href="#"><li>Contact</li></a>
-        </ul>
-        <ul>
-            <a href="oeuvre1.html"><li>Centre Georges Pompidou </li></a>
-            <a href="oeuvre3.html"><li>Fondation Beyeler</li></a>
-            <a href="oeuvre4.html"><li>Auditorium Parco della Musica</li></a>
-            <a href="oeuvre6.html"><li>Centre Paul Klee</li></a>
-            <a href="oeuvre5.html"><li>The New York Times Building</li></a>
-            <a href="oeuvre2.html"><li>The Shard</li></a>
-            <a href="oeuvre7.html"><li>The Whitney Museum of American Art</li></a>
-            <a href="oeuvre8.html"><li>Stavros Niarchos Foundation Cultural Center</li></a>
-        </ul>
-    </nav>
-    <!-- header -->
-    <a href="index.html">
-        <img x-show="!menuIsOpen" src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
-    </a>
+<header class="header"> 
+    <div class="superpose">
+        <button class="superposeelement" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" >
+            <img class="header_logo1"  x-show="!menuIsOpen" src="/public/Icones/logomenu.svg" alt="logomenu">
+            <img class="header_logo2"  x-show="menuIsOpen" src="/public/Icones/croix.svg" alt="croix">
+        </button>
+
+    </div>
+        <nav id="mainNav" x-show="menuIsOpen" class="header_caché">
+                <a class="header_logo3" href="index.html">
+                    <img  class="superposeelement"src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
+                </a>
+
+            <ul class="styleul1">
+                <a class="styleli1" href="index.html"><li>Page d'accueil</li></a>
+                <a class="styleli1" href="#"><li>Billeterie</li></a>
+                <a class="styleli1" href="#"><li>Contact</li></a>
+            </ul>
+
+            <ul class="styleul2">
+                <a class="styleli2 styleli3" href="oeuvre1.html"><li>Centre Georges Pompidou </li></a>
+                <a class="styleli2" href="oeuvre3.html"><li>Fondation Beyeler</li></a>
+                <a class="styleli2" href="oeuvre4.html"><li>Auditorium Parco della Musica</li></a>
+                <a class="styleli2" href="oeuvre6.html"><li>Centre Paul Klee</li></a>
+                <a class="styleli2" href="oeuvre5.html"><li>The New York Times Building</li></a>
+                <a class="styleli2" href="oeuvre2.html"><li>The Shard</li></a>
+                <a class="styleli2" href="oeuvre7.html"><li>The Whitney Museum of American Art</li></a>
+                <a class="styleli2" href="oeuvre8.html"><li>Stavros Niarchos Foundation Cultural Center</li></a>
+            </ul>
+        </nav>
+
+<a class="header_logo4" href="index.html">
+    <img x-show="!menuIsOpen" class="superposeelement " src="/public/Icones/logoexpo2.svg" alt="logoexpo2">
+</a>
 </header>
 <body>
     <img src="/public/img/TimesBuilding3.webp" alt="TimesBuilding3">
