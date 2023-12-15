@@ -164,6 +164,17 @@
     color: var(--Blanc);
 }
 
+.texte_titre6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, 20%);
+    z-index: 2;
+    top :-240px;
+    right: 20px;
+    padding-left: 20px;
+    
+}
 .background{
     background-color: var(--Blanc);
         

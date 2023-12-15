@@ -142,7 +142,7 @@
     <section class="carroussel_fond">
         <div>
             <a href="piano.html">
-                <h2 class="texte_titre5">Ranzo Piano Architecte Visionnaire</h2>
+                <h2 class="texte_titre6">Ranzo Piano Architecte Visionnaire</h2>
                 <div class="lienprépa1">
                     <img class="taillefleche" src="/public/Icones/arrow-right.svg" alt="flèche">
                     <p class="lienprépa1txt1">Voir plus</p>
@@ -150,6 +150,9 @@
                 
             </a>
         </div>
+        <a href="oeuvre1.html">
+            <h3>Centre Georges Pompidou Paris, France 1977 </h3>
+        </a>
         
         <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
             <ul class="caroussel_liste-liens">
@@ -164,9 +167,7 @@
             @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
             .find(e=>e.getBoundingClientRect().x>=0).id"
                 
-            
                 >
-                    <h3>Centre Georges Pompidou Paris, France 1977 </h3>
                 
                
                 <div id="ecran-1" class="carrousel_ecran">
@@ -190,6 +191,7 @@
                 
             </div>
         </div>
+        <h3>Fondation Beyeler - Bâle, Suisse 1997 </h3>
 
         <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
             <ul class="caroussel_liste-liens">
@@ -203,8 +205,10 @@
             <div class="carrousel_parent-ecrans" x-ref="parent"
             @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
             .find(e=>e.getBoundingClientRect().x>=0).id">
+
                 
-                    <h3>Fondation Beyeler - Bâle, Suisse 1997 </h3>
+                    
+                    
                     
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
@@ -225,6 +229,7 @@
             </div>
         </div>
 
+        <h3>Auditorium Parco della Musica - Rome, Italie 2002 </h3>
 
         <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
             <ul class="caroussel_liste-liens">
@@ -239,7 +244,7 @@
             @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
             .find(e=>e.getBoundingClientRect().x>=0).id">
                 
-                    <h3>Auditorium Parco della Musica - Rome, Italie 2002 </h3>
+                    
                     
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
@@ -260,6 +265,7 @@
                         </figure>     
             </div>
         </div>
+        <h3>Centre Paul Klee - Berne, Suisse 2005</h3>
 
         <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
             <ul class="caroussel_liste-liens">
@@ -274,7 +280,7 @@
             @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
             .find(e=>e.getBoundingClientRect().x>=0).id">
                 
-                    <h3>Centre Paul Klee - Berne, Suisse 2005</h3>
+                    
                     
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
@@ -294,6 +300,8 @@
                         </figure>     
             </div>
         </div>
+        <h3>The New York Times Building</h3>
+        <h3> New York, États-Unis 2007</h3>
 
         <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
             <ul class="caroussel_liste-liens">
@@ -308,8 +316,7 @@
             @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
             .find(e=>e.getBoundingClientRect().x>=0).id">
                 
-                <h3>The New York Times Building</h3>
-                <h3> New York, États-Unis 2007</h3>
+               
                     
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
@@ -330,6 +337,7 @@
             </div>
         </div>
 
+        <h3>The Shard - Londres, Royaume-Uni 2012</h3>
         <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
             <ul class="caroussel_liste-liens">
                 <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
@@ -343,7 +351,7 @@
             @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
             .find(e=>e.getBoundingClientRect().x>=0).id">
                 
-                <h3>The Shard - Londres, Royaume-Uni 2012</h3>
+                
                     
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
@@ -363,6 +371,8 @@
                         </figure>     
             </div>
         </div>
+        <h3>New York, États-Unis 2015.</h3>
+                    <h3>The Whitney Museum of American Art</h3>
 
         <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
             <ul class="caroussel_liste-liens">
@@ -377,8 +387,7 @@
             @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
             .find(e=>e.getBoundingClientRect().x>=0).id">
                 
-                    <h3>New York, États-Unis 2015.</h3>
-                    <h3>The Whitney Museum of American Art</h3>
+                    
                     
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
@@ -398,6 +407,8 @@
                         </figure>     
             </div>
         </div>
+        <h3>Athènes, Grèce 2016</h3>
+                <h3>Stavros Niarchos Foundation Cultural Center </h3>
 
         <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
             <ul class="caroussel_liste-liens">
@@ -412,8 +423,7 @@
             @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
             .find(e=>e.getBoundingClientRect().x>=0).id">
                 
-                <h3>Athènes, Grèce 2016</h3>
-                <h3>Stavros Niarchos Foundation Cultural Center </h3>
+                
                     
                         <div id="ecran-1" class="carrousel_ecran">
                             <figure>
