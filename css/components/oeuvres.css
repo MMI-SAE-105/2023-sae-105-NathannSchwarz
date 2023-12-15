@@ -1,0 +1,56 @@
+.oeuvre_titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    z-index: 2;
+    top :300px;
+    padding-left: 30px;
+    color: var(--Blanc);
+}
+
+.oeuvre_titre2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    z-index: 2;
+    top :300px;
+    padding-left: 30px;
+}
+
+.img_titre_oeuvre{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin-bottom: -150px;
+}
+
+.img_oeuvre1{
+    position: relative;
+    top: -10px ;
+    height: 214px;
+    margin-left: 25px;
+    margin-bottom: -10px;
+}
+
+.texte_oeuvre{
+    text-align: center;
+    width: 334px;
+    height: 289px;
+    flex-shrink: 0;
+    margin-left:30px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.texte_oeuvre2{
+    text-align: center;
+    width: 334px;
+    height: 289px;
+    flex-shrink: 0;
+    margin-left:30px;
+    margin-bottom: 85px;
+    line-height: 1.5;
+}
+    
