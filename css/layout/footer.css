@@ -75,3 +75,9 @@
     
 
 }
+
+.footer_position{
+    position: relative;
+    background-color: var(--Black);
+    top: 600px;
+}

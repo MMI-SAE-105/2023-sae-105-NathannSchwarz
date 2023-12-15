@@ -78,6 +78,12 @@
 
 .taillefleche2{
     height: 15px;
+    color: var(--Blanc);
+    z-index: 10;
+}
+
+.taillefleche2{
+    height: 15px;
     padding-left: 20px;
 }
 
@@ -98,12 +104,12 @@
 
 .imggoerge{
     position: absolute;
-    top:900px;
+    top:935px;
 }
 
 .imggoerge2{
     position: absolute;
-    top:1410px;
+    top:1435px;
 }
 
 .ouvertureposition{
@@ -158,6 +164,29 @@
     color: var(--Blanc);
 }
 
-.imgcarrousel{
-    background-color: var(--Noir);
+.background{
+    background-color: var(--Blanc);
+        
+}
+
+
+.vecteur_fond{
+    position: absolute;
+    top:2100px;
+    width: 356.975px;   
+    height: 1837.791px;
+    flex-shrink: 0;
+
+    
+}
+
+.taille_img{
+    width: 228px;
+    height: 144px;
+}
+
+
+.carroussel_posistion1{
+top: 20px;
+left: 20px;
 }

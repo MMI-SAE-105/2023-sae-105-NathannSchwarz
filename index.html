@@ -55,8 +55,11 @@
 
     <section>
         <div> 
-            <img class="logoposition" src="/public/Icones/Ellipse 1.svg" alt="ellipse">
-            <h3 class="soustitre">Ouvert du 13 avril au 23 juin 2024 </h3>
+            <div>
+                <img class="logoposition" src="/public/Icones/Ellipse 1.svg" alt="ellipse">
+                <h3 class="soustitre">Ouvert du 13 avril au 23 juin 2024 </h3>
+            </div>
+            
 
 
             <div class="lienprépa1">
@@ -136,92 +139,306 @@
         <li>- 13 ans et autres : Gratuit</li>
     </ul>
 
-    <section class="carroussel">
+    <section class="carroussel_fond">
         <div>
             <a href="piano.html">
                 <h2 class="texte_titre5">Ranzo Piano Architecte Visionnaire</h2>
-                <div>
-                    <img class="imgcarrousel"src="/public/Icones/arrow-right.svg" alt="flèche">
-                    <p>Voir plus</p>
+                <div class="lienprépa1">
+                    <img class="taillefleche" src="/public/Icones/arrow-right.svg" alt="flèche">
+                    <p class="lienprépa1txt1">Voir plus</p>
                 </div>
                 
             </a>
         </div>
-    
-        <div>
-            <img src="/public/Icones/Vector 2.svg" alt="vecteurpage">
-            <div>
-                <a href="oeuvre1.html">
+        
+        <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
+                
+            </ul>
+            <br>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="p = $refs.parent ; p.scrollLeft -= p.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="p = $refs.parent ; p.scrollLeft += p.clientWidth">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0).id"
+                
+            
+                >
                     <h3>Centre Georges Pompidou Paris, France 1977 </h3>
-                    <img src="/public/img/goergepompidou1.webp" alt="goergepompidou1">
-                    <img src="/public/img/goergepompidou2.webp" alt="goergepompidou2">
-                    <img src="/public/img/goergepompidou3.webp" alt="goergepompidou3">
-                </a>
+                
+               
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img  class="taille_img" src="./public/img/goergepompidou1.webp" alt="goergepompidou1">
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img class="taille_img" src="./public/img/goergepompidou2.webp" alt="goergepompidou2">
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img  class="taille_img" src="./public/img/goergepompidou3.webp" alt="goergepompidou1">
+                        
+                    </figure>
+               </div>
+                    
+                
+                
             </div>
-            <div>
-                <a href="oeuvre3.html">
+        </div>
+
+        <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
+                
+            </ul>
+            <br>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="p = $refs.parent ; p.scrollLeft -= p.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="p = $refs.parent ; p.scrollLeft += p.clientWidth">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0).id">
+                
                     <h3>Fondation Beyeler - Bâle, Suisse 1997 </h3>
-                    <img src="/public/img/fondationbayer1.webp" alt="fondationbayer1">
-                    <img src="/public/img/fondationbayer2.webp" alt="fondationbayer2">
-                    <img src="/public/img/fondationbayer3.webp" alt="fondationbayer3">
-                </a>
+                    
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img" src="/public/img/fondationbayer2.webp" alt="fondationbayer2">
+                            
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/fondationbayer1.webp" alt="fondationbayer1">
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img" src="/public/img/fondationbayer3.webp" alt="fondationbayer3">
+                            
+                        </figure>     
             </div>
-            <div>
-                <a href="oeuvre4.html">
+        </div>
+
+
+        <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
+                
+            </ul>
+            <br>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="p = $refs.parent ; p.scrollLeft -= p.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="p = $refs.parent ; p.scrollLeft += p.clientWidth">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0).id">
+                
                     <h3>Auditorium Parco della Musica - Rome, Italie 2002 </h3>
-                    <img src="/public/img/Auditorium1.webp" alt="Auditorium1">
-                    <img src="/public/img/Auditorium2.webp" alt="Auditorium2">
-                    <img src="/public/img/Auditorium3.webp" alt="Auditorium3">
-                </a>
+                    
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/Auditorium2.webp" alt="Auditorium2">
+                            
+                            
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/Auditorium1.webp" alt="Auditorium1">
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/Auditorium3.webp" alt="Auditorium3">
+                            
+                        </figure>     
             </div>
-            <div>
-                <a href="oeuvre6.html">
-                    <h3></h3>Centre Paul Klee - Berne, Suisse 2005</h3>
-                    <img src="/public/img/CentrePaulKlee1.webp" alt="CentrePaulKlee1">
-                    <img src="/public/img/CentrePaulKlee2.webp" alt="CentrePaulKlee2">
-                    <img src="/public/img/CentrePaulKlee3.webp" alt="CentrePaulKlee3">
-                </a>
+        </div>
+
+        <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
+                
+            </ul>
+            <br>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="p = $refs.parent ; p.scrollLeft -= p.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="p = $refs.parent ; p.scrollLeft += p.clientWidth">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0).id">
+                
+                    <h3>Centre Paul Klee - Berne, Suisse 2005</h3>
+                    
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            
+                            <img class="taille_img"src="/public/img/CentrePaulKlee2.webp" alt="CentrePaulKlee2">
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/CentrePaulKlee1.webp" alt="CentrePaulKlee1">
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/CentrePaulKlee3.webp" alt="CentrePaulKlee3">
+                            
+                        </figure>     
             </div>
-            <div>
-                <a href="oeuvre5.html">
-                    <h3>The New York Times Building</h3>
-                    <h3> New York, États-Unis 2007</h3>
-                    <img src="/public/img/TimesBuilding1.webp" alt="TimesBuilding1">
-                    <img src="/public/img/TimesBuilding2.webp" alt="TimesBuilding2">
-                    <img src="/public/img/TimesBuilding3.webp" alt="TimesBuilding3">
-                </a>
+        </div>
+
+        <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
+                
+            </ul>
+            <br>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="p = $refs.parent ; p.scrollLeft -= p.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="p = $refs.parent ; p.scrollLeft += p.clientWidth">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0).id">
+                
+                <h3>The New York Times Building</h3>
+                <h3> New York, États-Unis 2007</h3>
+                    
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            
+                            <img class="taille_img"src="/public/img/TimesBuilding2.webp" alt="TimesBuilding2">
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/TimesBuilding1.webp" alt="TimesBuilding1">
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/TimesBuilding3.webp" alt="TimesBuilding3">
+                            
+                        </figure>     
             </div>
-            <div>
-                <a href="oeuvre2.html">
-                    <h3>The Shard - Londres, Royaume-Uni 2012</h3>
-                    <img src="/public/img/TheShard1.webp" alt="TheShard1">
-                    <img src="/public/img/TheShard2.webp" alt="TheShard2">
-                    <img src="/public/img/TheShard3.webp" alt="TheShard3">
-                </a>
+        </div>
+
+        <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
+                
+            </ul>
+            <br>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="p = $refs.parent ; p.scrollLeft -= p.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="p = $refs.parent ; p.scrollLeft += p.clientWidth">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0).id">
+                
+                <h3>The Shard - Londres, Royaume-Uni 2012</h3>
+                    
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            
+                            <img class="taille_img"src="/public/img/TheShard1.webp" alt="TheShard1">
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/TheShard2.webp" alt="TheShard2">
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/TheShard3.webp" alt="TheShard3">
+                            
+                        </figure>     
             </div>
-            <div>
-                <a href="oeuvre7.html">
+        </div>
+
+        <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
+                
+            </ul>
+            <br>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="p = $refs.parent ; p.scrollLeft -= p.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="p = $refs.parent ; p.scrollLeft += p.clientWidth">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0).id">
+                
                     <h3>New York, États-Unis 2015.</h3>
                     <h3>The Whitney Museum of American Art</h3>
-                    <img src="/public/img/MuseumofAmerican1.webp" alt="MuseumofAmerican1">
-                    <img src="/public/img/MuseumofAmerican2.webp" alt="MuseumofAmerican2">
-                    <img src="/public/img/MuseumofAmerican3.webp" alt="MuseumofAmerican3">
-                </a>
+                    
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            
+                            <img class="taille_img"src="/public/img/MuseumofAmerican1.webp" alt="MuseumofAmerican1">
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/MuseumofAmerican2.webp" alt="MuseumofAmerican2">
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img class="taille_img"src="/public/img/MuseumofAmerican3.webp" alt="MuseumofAmerican3">
+                            
+                        </figure>     
             </div>
-            <div>
-                <a href="oeuvre8.html">
-                    <h3>Athènes, Grèce 2016</h3>
-                    <h3>Stavros Niarchos Foundation Cultural Center </h3>
-                    <img src="/public/img/CulturalCenter1.webp" alt="CulturalCenter1">
-                    <img src="/public/img/CulturalCenter2.webp" alt="CulturalCenter2">
-                    <img src="/public/img/CulturalCenter3.webp" alt="CulturalCenter3">
-                </a>
+        </div>
+
+        <div class="carrousel" x-data="{ hrefCourant : '#ecran-2',}">
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a></li>
+                <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a></li>
+                
+            </ul>
+            <br>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="p = $refs.parent ; p.scrollLeft -= p.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="p = $refs.parent ; p.scrollLeft += p.clientWidth">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll=" hrefCourant = '#'+ [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0).id">
+                
+                <h3>Athènes, Grèce 2016</h3>
+                <h3>Stavros Niarchos Foundation Cultural Center </h3>
+                    
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                
+                                <img class="taille_img"src="/public/img/CulturalCenter1.webp" alt="CulturalCenter1">
+                            </figure>
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            <figure>
+                                <img class="taille_img"src="/public/img/CulturalCenter2.webp" alt="CulturalCenter2">
+                            </figure>
+                        </div>
+                        <div id="ecran-3" class="carrousel_ecran">
+                            <figure>
+                                <img class="taille_img"src="/public/img/CulturalCenter3.webp" alt="CulturalCenter3">
+                                
+                            </figure>   
+                    
+                      
             </div>
         </div>
     </section>
    
 </body>
-<footer>
+<footer class="footer_position">
     <section  class="section_formulaire">
         <img class="logo_footer" src="/public/Icones/logoexpo1.svg" alt="logoexpo1">
 
