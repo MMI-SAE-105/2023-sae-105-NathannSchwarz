@@ -9,6 +9,7 @@
     color: var(--Blanc);
 }
 
+
 .oeuvre_titre2{
     position: absolute;
     top: 50%;
@@ -58,6 +59,17 @@
     margin-bottom: 40px;
     line-height: 1.5;
 }
+
+.texte_oeuvre1{
+    text-align: center;
+    width: 334px;
+    height: 289px;
+    flex-shrink: 0;
+    margin-left:30px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
 .texte_oeuvre2{
     text-align: center;
     width: 334px;

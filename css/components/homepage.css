@@ -1,3 +1,6 @@
+
+
+
 .text_intro{
     position: relative;
     top : -60px;
@@ -22,11 +25,23 @@
 
 
 .superposeelement{
-    position: absolute;
+    position: relative;
+    z-index: 11;
+      
+}
+
+.menu{
+    position: fixed;
+    display: grid;
     top: 0;
     left: 0;
-    z-index: 2;
-}
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    place-content: center;
+    z-index: 10;
+    background-color: var(--Blanc);
+  }
 
 .soustitre{
     position: relative;
