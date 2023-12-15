@@ -79,5 +79,7 @@
 .footer_position{
     position: relative;
     background-color: var(--Black);
-    top: 700px;
+    top: -200px;
+    margin-bottom: -200px;
+    padding-bottom: -200px;
 }

@@ -55,6 +55,12 @@
     margin-left: 70px;
     margin-right: 40px;
 }
+.lienprépa1txt{
+    margin-top: -23px;
+    padding-left: 50px;
+    color: var(--Blanc);
+    z-index: 4;
+}
 
 .lienprépa1txt1{
     margin-top: -23px;
@@ -74,6 +80,12 @@
 
 .taillefleche{
     height: 15px;
+}
+
+.taillefleche1{
+    height: 15px;
+    color: var(--Blanc);
+    z-index:4;
 }
 
 .taillefleche2{
@@ -173,8 +185,11 @@
     top :-240px;
     right: 20px;
     padding-left: 20px;
-    
+    z-index: 4;
+    color: var(--Blanc);
+   
 }
+
 .background{
     background-color: var(--Blanc);
         
@@ -200,4 +215,12 @@
 .carroussel_posistion1{
 top: 20px;
 left: 20px;
+}
+
+.titre_oeuvre_lien{
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 40px;
+    color: var(--Blanc);
+    z-index: 4;
 }

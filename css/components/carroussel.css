@@ -73,8 +73,20 @@
 
 .carroussel_fond{
     position: relative;
-    background-color: var(--Black);
-    top: 800px;
+    top: -275px;
   }
 
   
+.backgroundB{
+    background-color: var(--Noir);
+    padding-right: 20px;
+    z-index: -2;
+    margin-top: 35rem;
+    position: relative;
+    width: 390.975px;
+    height: 130rem;
+    padding-right: 20px;
+    padding-top: -300rem;
+    margin-bottom: -100rem;
+    
+}
